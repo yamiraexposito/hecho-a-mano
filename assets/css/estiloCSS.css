@@ -1,0 +1,176 @@
+/* ==========================================
+   1. CONFIGURACIÓN GENERAL Y RESET
+   ========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente base para el cuerpo de la web */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* ==========================================
+   2. ENCABEZADO (HEADER)
+   ========================================== */
+header {
+    background-color: #d1ebd5;
+    padding: 15px 20px;
+    min-height: 140px; 
+    display: flex;
+    align-items: center;
+}
+
+/* Contenedor que alinea horizontalmente el logo y los textos */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    max-height: 110px;
+    width: auto;
+    display: block;
+}
+
+/* Bloque vertical para el título y subtítulo */
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título principal */
+.logo-title {
+    font-family: 'MiStyleScript', sans-serif; 
+    font-size: 38px;
+    color: #9229a0;
+    line-height: 1.1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulo o eslogan */
+.logo-subtitle {
+    font-family: 'MiStoryScript', sans-serif; 
+    font-size: 26px;
+    color: #d4a404;
+    margin-top: -2px;
+}
+
+/* ==========================================
+   3. CUERPO PRINCIPAL (CONTENIDO + BARRA LATERAL)
+   ========================================== */
+.main-container {
+    display: flex;
+    flex: 1;
+}
+
+/* Columna de artículos */
+main {
+    flex: 3;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+article {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 15px;
+}
+
+/* Clases semánticas para la lista de herramientas */
+.lista-herramientas {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.lista-herramientas li {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 15px;
+    margin-bottom: 12px;
+    list-style-type: disc;
+}
+
+/* Reemplazo moderno para las etiquetas visuales obsoletas <b> y <u> */
+.resaltado-subrayado {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   4. BARRA LATERAL (ASIDE)
+   ========================================== */
+aside {
+    flex: 1;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-nav {
+    list-style: none;
+}
+
+.menu-nav li a {
+    display: block;
+    background-color: #8cc495;
+    color: #364420;
+    text-decoration: none;
+    padding: 12px 15px;
+    border-bottom: 1px solid #99a773;
+    font-size: 15px;
+}
+
+.menu-nav li a:hover {
+    background-color: #a4b37b;
+}
+
+.sidebar-text {
+    background-color: #8bad9a;
+    padding: 15px;
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+/* ==========================================
+   5. PIE DE PÁGINA (FOOTER)
+   ========================================== */
+footer {
+    background-color: #948f8f; 
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #ffffff;            
+    text-align: center;        
+}
